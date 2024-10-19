@@ -4,4 +4,5 @@ Desktop Widgets for Windows
 
 ## Screenshot
 
-![image](https://github.com/user-attachments/assets/c939c885-7152-4660-bf44-c081e560179c)
+![image](https://github.com/user-attachments/assets/01374c3c-94c1-4f12-a9c4-87ca9486efdd)
+
