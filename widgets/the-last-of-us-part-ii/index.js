@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', evt => {
             let color = get_default(options.color, '#001125');
 
             target.style.setProperty('--color', color);
-            start_clock();
         }
     })
 })

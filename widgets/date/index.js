@@ -1,4 +1,4 @@
-function start_clock() {
+function tick() {
     let target = document.querySelector('.date span');
     let prev_date = '';
     let month_names = ['JAN','FEB',"MAR",'APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
@@ -9,8 +9,10 @@ function start_clock() {
         let month = month_names[dt.getMonth()];
         let year = (1900 + dt.getYear()) + '';
 
-        if (prev_date != `${data} ${month} ${year}`) {
-            prev_date = `${data} ${month} ${year}`
+        if (prev_date != `${date} ${month} ${year}`) {
+            prev_date = `${date} ${month} ${year}`
+
+            console.log(prev_date);
             target.innerText = prev_date; 
         }
     }, 1000);
@@ -73,12 +75,8 @@ document.addEventListener('DOMContentLoaded', evt => {
                     break;
             }
 
-            console.log({
-                color: color
-            })
-
             date.style.setProperty('--color', color);
-            start_clock();
+            tick();
         }
     })
 })

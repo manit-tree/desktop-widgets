@@ -1,4 +1,4 @@
-function start_clock() {
+function tick() {
     let hhmm = document.querySelector('.hh-mm');
 
     setInterval(() => {
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', evt => {
             }
 
             clock.style.setProperty('--color', color);
-            start_clock();
+            tick();
         }
     })
 })
