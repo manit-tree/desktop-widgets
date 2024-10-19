@@ -1,0 +1,22 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    body {
+        overflow: hidden;
+
+        svg {
+            fill: var(--color);
+            -webkit-app-region: drag;
+        }
+    }

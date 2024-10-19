@@ -1,0 +1,40 @@
+@font-face {
+    font-family:'square-sans';
+    src: url(./square-sans.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    -webkit-app-region: drag;
+    overflow: hidden;
+
+    .date {
+        display: flex;
+        justify-content: var(--justify-content, center);
+        align-items: flex-end;
+        font-family: 'square-sans';
+        font-size: 50px;
+        line-height: 0.5em;
+        color: var(--color);
+        
+        span {
+            position: relative;
+        }
+    }
+}
